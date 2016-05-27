@@ -1,4 +1,4 @@
-# <Project Name>
+# Project Name
 
 A description of the project.
 
