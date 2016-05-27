@@ -1,4 +1,4 @@
-# Rebuilding Community Infrastructure
+# <Project Name>
 
 A description of the project.
 
