@@ -2,7 +2,7 @@ var path = require('path');
 
 var apos = require('apostrophe')({
   shortName: 'apostrophe-boilerplate',
-
+  baseUrl: 'http://localhost:4000',
   // See lib/modules for basic project-level configuration of our modules
   // responsible for serving static assets, managing page templates and
   // configuring user accounts.
@@ -19,7 +19,11 @@ var apos = require('apostrophe')({
 
     // If a template is not found somewhere else, serve it from the top-level
     // `views/` folder of the project
-
+    'apostrophe-headless': {},
+    'apostrophe-pages': {
+      restApi: true,
+      apiTemplates: [ 'extraHead','beforeMain','afterMain', 'menu']
+    },
     'apostrophe-templates': { viewsFolderFallback: path.join(__dirname, 'views') }
 
   }
