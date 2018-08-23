@@ -1,1 +1,12 @@
-{% extends "layout.html" %}
+{% extends "views:layout.html" %}
+{% block title %}
+{{ super() }}
+{% endblock %}
+
+{% block extraHead %}
+{{ super() }}
+{% endblock %}
+
+{% block beforeMain %}
+{{ super() }}
+{% endblock %}
